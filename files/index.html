@@ -8,6 +8,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- Preload CV-bar background images (defined in CSS, invisible to preload scanner) -->
+    <link rel="preload" as="image" href="Met.jpg">
+    <link rel="preload" as="image" href="Mac.jpg">
+    <link rel="preload" as="image" href="Mas.jpg">
+    <link rel="preload" as="image" href="Hat.jpg">
+    <link rel="preload" as="image" href="Bns.jpg">
+    <link rel="preload" as="image" href="Has.jpg">
 </head>
 <body>
 
@@ -37,7 +44,7 @@
         </div>
 
         <div class="hero-right">
-            <img src="hero.jpg" alt="HSB Group 15" class="hero-right-img">
+            <img src="hero.jpg" alt="HSB Group 15" class="hero-right-img" loading="eager" fetchpriority="high" decoding="sync">
             <div class="hero-badge">Digital Business &amp; Transformation</div>
         </div>
 
@@ -112,7 +119,7 @@
                     <div class="vmc-card-title">Shape Tomorrow's Leaders</div>
                     <p class="vmc-card-desc">HSB educates young talents to become leaders, executives, and managers for both the Public and Private sectors — bridging academic rigor with real-world impact.</p>
                     <div class="vmc-card-img">
-                        <img src="m.jpg" alt="HSB Mission">
+                        <img src="m.jpg" alt="HSB Mission" loading="lazy" decoding="async">
                     </div>
                 </div>
 
@@ -125,7 +132,7 @@
                     <div class="vmc-card-title">Global Standard. Local Heart.</div>
                     <p class="vmc-card-desc">A reputable School of Business and Management recognized in Vietnam and globally — known for interdisciplinary education integrating Management, Technology, and Security.</p>
                     <div class="vmc-card-img">
-                        <img src="v.jpg" alt="HSB Vision">
+                        <img src="v.jpg" alt="HSB Vision" loading="lazy" decoding="async">
                     </div>
                 </div>
 
@@ -138,7 +145,7 @@
                     <div class="vmc-card-title">I · P · Q</div>
                     <p class="vmc-card-desc">Innovation · Pioneering · Quality — the three pillars of HSB's sustainable growth, cultivated through six student values: Health, Ethics, Will, Talent, Love, and Duty.</p>
                     <div class="vmc-card-img">
-                        <img src="cv.jpg" alt="HSB Core Values">
+                        <img src="cv.jpg" alt="HSB Core Values" loading="lazy" decoding="async">
                     </div>
                 </div>
 
@@ -213,7 +220,7 @@
                 <!-- Card 1: MET -->
                 <div class="ap-card s1 reveal">
                     <div class="ap-img">
-                        <img src="mt.JPG" alt="Management of Enterprise and Technology">
+                        <img src="mt.JPG" alt="Management of Enterprise and Technology" loading="lazy" decoding="async">
                         <div class="ap-badge">MET — 01</div>
                     </div>
                     <div class="ap-body">
@@ -229,7 +236,7 @@
                 <!-- Card 2: MAC -->
                 <div class="ap-card s1 reveal d1">
                     <div class="ap-img">
-                        <img src="mc.jpeg" alt="Marketing and Communications">
+                        <img src="mc.jpeg" alt="Marketing and Communications" loading="lazy" decoding="async">
                         <div class="ap-badge">MAC — 02</div>
                     </div>
                     <div class="ap-body">
@@ -245,7 +252,7 @@
                 <!-- Card 3: MAS -->
                 <div class="ap-card s1 reveal d2">
                     <div class="ap-img">
-                        <img src="ms.JPG" alt="Management and Security">
+                        <img src="ms.JPG" alt="Management and Security" loading="lazy" decoding="async">
                         <div class="ap-badge" style="line-height:1.45">MAS — 03<br><span style="font-size:.52rem;color:rgba(255,255,255,.78);letter-spacing:.06em">ACQUIN Accredited</span></div>
                     </div>
                     <div class="ap-body">
